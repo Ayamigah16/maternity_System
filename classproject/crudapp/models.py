@@ -46,7 +46,7 @@ class Appointments(models.Model):
         return "%s %s" % (appointmentDate, docId)  
     
     
-class Meidical_Records(models.Model):
+class Medical_Records(models.Model):
     patient_id = models.ForeignKey(
         Patient, related_name="medicals",to_field="patient_id", on_delete=models.CASCADE
     )
